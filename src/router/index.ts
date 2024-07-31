@@ -1,4 +1,5 @@
 import { routes } from 'vue-router/auto-routes'
+import NotFound from '@/exception/NotFound.vue';
 import { createRouter, createWebHashHistory, Router } from 'vue-router'
 
 const router: Router = createRouter({
@@ -6,9 +7,13 @@ const router: Router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/layout'
+      redirect: '/home'
     },
-    ...routes
+    ...routes,
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound
+    }
   ]
 })
 

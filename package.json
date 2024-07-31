@@ -1,5 +1,5 @@
 {
-  "name": "varlet-app-template-lite",
+  "name": "银盛兑随心享",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@varlet/axle": "^0.7.1",
+    "@varlet/bounce-fixer": "^0.0.3",
     "@varlet/touch-emulator": "^3.3.10",
     "@varlet/ui": "^3.3.10",
     "@varlet/use": "^3.3.10",

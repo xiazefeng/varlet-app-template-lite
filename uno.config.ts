@@ -3,7 +3,9 @@ import { presetVarlet } from '@varlet/preset-unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 
 export default defineConfig({
-  presets: [presetUno(), presetRemToPx(), presetIcons(), presetVarlet()],
+  presets: [presetUno(), presetRemToPx({
+    baseFontSize:4,
+  }), presetIcons(), presetVarlet()],
   theme: {
     colors: {
       secondary: 'var(--color-secondary)',
